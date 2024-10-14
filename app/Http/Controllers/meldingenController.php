@@ -56,3 +56,5 @@ VALUES(:attractie,:type,:capaciteit,:prioriteit,:melder,:overige_info)";
     ]);
 
     header("Location: ../../../resources/views/meldingen/index.php?msg=Melding opgeslagen");
+
+

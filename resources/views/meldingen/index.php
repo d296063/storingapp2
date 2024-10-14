@@ -35,6 +35,8 @@
                 <th>Melder</th>
                 <th>Gemeld op</th>
                 <th>Overige info</th>
+                <th>aanpassen</th>
+
 
             </tr>
             <?php foreach ($meldingen as $melding) : ?>
@@ -52,7 +54,8 @@
                     <td><?php echo $melding['melder']; ?></td>
                     <td><?php echo $melding['gemeld_op']; ?></td>
                     <td><?php echo $melding['overige_info']; ?></td>
-                    <td><a href="edit.php?id=<?php echo $meldingen['id']; ?>">aanpassen</a></td>
+                    <td><a href="edit.php">aanpassen</a></td>
+
 
 
                 </tr>
