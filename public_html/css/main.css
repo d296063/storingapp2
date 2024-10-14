@@ -89,85 +89,97 @@ textarea {
 
 /* ALGEMEEN */
 
-html{
-    font-size: 16px;
+html {
+  font-size: 16px;
 }
 
-body{
-    font-family: Arial;
+body {
+  font-family: Arial;
 }
 
-.container{
-    max-width: 1024px;
-    margin: 0 auto;
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
 }
 
-header{
-    border-bottom: 1px solid lightgrey;
-    font-size: 1.25rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+header {
+  border-bottom: 1px solid lightgrey;
+  font-size: 1.25rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
-header .container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.logo{
-    height: 5rem;
+.logo {
+  height: 5rem;
 }
 
-h1{
-    margin-bottom: 0px;
+h1 {
+  margin-bottom: 0px;
 }
 
-h1+a{
-    display: block;
-    margin-bottom: 1.5rem;
+h1+a {
+  display: block;
+  margin-bottom: 1.5rem;
 }
 
-.msg{
-    margin: 1rem 0;
-    padding: 1rem;
-    background-color: lightblue;
-    border-radius: 4px;
+.msg {
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: lightblue;
+  border-radius: 4px;
 }
 
-table{
-    width: 100%;
+table {
+  width: 100%;
 }
 
-th{
-    text-align: left;
+th {
+  text-align: left;
 }
 
 /* HOME */
 
-.home{
-    min-height: calc(100vh - 7rem - 1px);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.home {
+  min-height: calc(100vh - 7rem - 1px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* MELDINGEN */
 
-.form-group{
-    margin: 1rem 0;
+.form-group {
+  margin: 1rem 0;
 }
 
-label{
-    cursor: pointer;
-    display: inline-block;
-    min-width: 140px;
-    vertical-align: top;
+label {
+  cursor: pointer;
+  display: inline-block;
+  min-width: 140px;
+  vertical-align: top;
 }
 
-.form-input{
-    width: 600px;
+.form-input {
+  width: 600px;
+}
+
+tr:nth-child(odd) {
+  background-color: #ebebeb;
+}
+
+tr:first-child {
+  background-color: #d3d3d3;
+}
+
+tr:hover {
+  background-color: #d3d3d3;
 }
 
 
@@ -276,9 +288,9 @@ label{
 }
 
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
@@ -289,6 +301,7 @@ label{
    ========================================================================== */
 
 @media print {
+
   *,
   *::before,
   *::after {
@@ -356,4 +369,3 @@ label{
     page-break-after: avoid;
   }
 }
-
